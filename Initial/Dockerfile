@@ -1,5 +1,9 @@
-FROM alpine
+FROM alpine:latest
 
-RUN apk update
-RUN apk add htop
-CMD htop
+MAINTAINER davidjguru <davidjguru@gmail.com>
+
+#
+# Step 1: Installation
+#
+
+RUN apk update && apk upgrade
